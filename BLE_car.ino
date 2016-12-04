@@ -53,31 +53,31 @@ void loop()
 {
   int cd=Serial.read(); //从串口读取一个字符
   switch(cd){
-  case 'g':
+  case 'g'://前进
     motosp(0,225);
     break;
   
-  case 'b':
+  case 'b'://后退
     motosp(0,-225);
     break;
     
-    case '1':
+    case '1'://左前
     motosp(-225,150);
     break;
     
-    case '2':
+    case '2'://右前
     motosp(255,150);
     break;
     
-    case '3':
+    case '3'://左后
     motosp(-225,-150);
     break;
     
-    case '4':
+    case '4'://右后
     motosp(255,-150);
     break;
 
-    case '0':
+    case '0'://停
     motosp(0,0);
     break;
   }
